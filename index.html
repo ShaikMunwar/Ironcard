@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Card</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.ico">
+<!--<meta http-equiv="refresh" content="5">-->
+<body>
+<div class="container">
+<div class="card">
+<div class="inner-box" id="card">
+<div class="card-front">
+<h2>LOGIN</h2>
+<form>
+<input type="email" class="input-box" placeholder="Enter Your Email" required>
+<input type="password" class="input-box" placeholder="Enter Your password" required>
+<input type="checkbox" class="span"><span>Remember Me</span>
+<button type="button" class="sumbit-btn" onclick="Submit()">Submit</button>
+</form>
+<button type="button" class="btn" onclick="openRegister()">I'm New Here</button>
+<a href="https://www.google.com">Forgot password</a>
+</div>
+<div class="card-back">
+<h2>REGISTER</h2>
+<form>
+<input type="text" class="input-box" placeholder="Enter Your Name" required>
+<input type="email" class="input-box" placeholder="Enter Your Email" required>
+<input type="password" class="input-box" placeholder="Enter Your password" required>
+<input type="checkbox" class="span"><span>Remember Me</span>
+<button type="button" class="sumbit-btn">Submit</button>
+</form>
+<button type="button" class="btn" onclick="openLogin()">I've an Account</button>
+<a href="https://www.google.com">Forgot password</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+function Submit(){
+alert('Submitted Sucessfully')
+}
+var card = document.getElementById("card");
+function openRegister(){
+card.style.transform = "rotateY(-180deg)";
+}
+function openLogin(){
+card.style.transform = "rotateY(0deg)";
+}
+</script>
+</body>
+</head>
+</html>
